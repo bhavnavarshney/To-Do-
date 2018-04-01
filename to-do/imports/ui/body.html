@@ -1,0 +1,18 @@
+<body>
+	<div class="container">
+		<header> <h1> TO-DO List </h1> </header>
+		 <form class="add_task">
+			<input type="text" size=20 name="text" placeholder="Type your task to be added in the task list" />
+		</form> 
+		{{>display_task}}
+</div>
+
+</body>
+
+<template name="display_task">
+	<ol> {{#each all_items}} 
+		<li> <input type="checkbox" class="toggle-check" />  <label class="updateMe"> {{ text }} </label> </li>
+		
+		{{/each}}
+	</ol>
+</template>

@@ -1,2 +1,2 @@
 import {Mongo} from 'meteor/mongo';
-export const tasks = new Mongo.Collection('Tasks');
+export const Tasks = new Mongo.Collection('TaskList11');
