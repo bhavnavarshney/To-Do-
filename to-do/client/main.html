@@ -1,0 +1,17 @@
+<head>
+  <title>To-Do</title>
+</head>
+<body>
+  <div class="container">
+  <header> <h1> My TO-DO List </h1> </header>
+  {{#each task_iteration}}
+    {{>mytask}}
+  {{/each}}
+</div>
+</body>
+<template name="mytask">
+  <ul>
+    
+    <li> {{text}} </li>
+  </ul>
+</template>
